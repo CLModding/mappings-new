@@ -1,4 +1,4 @@
-tiny	2	0	official	named
+tiny	2	0	intermediary	named
 c	net/minecraft/class_864	br/com/craftlandia/mods/autoreconnect/AutoReconnectTimer
 	f	J	field_3623	reconnectTime
 c	net/minecraft/class_435	br/com/craftlandia/skins/SkinsHandler

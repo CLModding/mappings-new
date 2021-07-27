@@ -1,4 +1,4 @@
-tiny	2	0	official	named
+tiny	2	0	intermediary	named
 c	net/minecraft/class_1540	net/minecraft/Hopper
 	m	()D	method_4777	getZPos
 	m	()D	method_4778	getYPos

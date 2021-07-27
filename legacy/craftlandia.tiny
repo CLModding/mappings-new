@@ -29,11 +29,11 @@ c	net/minecraft/class_669	br/com/craftlandia/blocks/BlockStainedGlass
 	f	[Lnet/minecraft/class_902;	field_2683	icons
 	m	(ILnet/minecraft/class_1133;Ljava/util/List;)V	method_1832	getSubBlocks
 	m	(Lnet/minecraft/class_1335;)V	method_1904	registerIcons
-c	net/minecraft/class_427	br/com/craftlandia/antihack/handler/VersionHandler
+c	net/minecraft/class_427	br/com/craftlandia/antihack/action/AntiHackActionReplier
 	f	Lnet/minecraft/class_1118;	field_1803	packet
 	m	(Lnet/minecraft/class_1118;)V	<init>	<init>
 		p	1		packet
-c	net/minecraft/class_911	br/com/craftlandia/antihack/blacklist/BlacklistedApplicationHelper
+c	net/minecraft/class_911	br/com/craftlandia/antihack/blacklist/BlacklistedApplicationDetector
 	m	([Ljava/lang/String;)V	<init>	<init>
 		p	1		names
 	f	[Ljava/lang/String;	field_3850	blacklistedNames
@@ -42,7 +42,7 @@ c	net/minecraft/class_383	br/com/craftlandia/items/PrismarineItemBlock
 	m	(Lnet/minecraft/class_200;)Ljava/lang/String;	method_76	getUnlocalizedName
 	m	(I)I	method_58	getMetadata
 c	net/minecraft/class_1331	br/com/craftlandia/antihack/ScreenshotHelper
-c	net/minecraft/class_1198	br/com/craftlandia/antihack/ScreenshotHelper
+c	net/minecraft/class_1198	br/com/craftlandia/antihack/AntiHackInfoCallback
 	m	(Ljava/lang/String;)V	call	call
 		p	1		result
 c	net/minecraft/class_453	br/com/craftlandia/mods/itemhud/ItemHudMod

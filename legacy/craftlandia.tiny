@@ -60,7 +60,7 @@ c	net/minecraft/class_1356	br/com/craftlandia/blocks/BlockPrismarine
 	m	(Lnet/minecraft/class_1335;)V	method_1904	registerIcons
 	f	[Ljava/lang/String;	field_5802	names
 	m	(ILnet/minecraft/class_1133;Ljava/util/List;)V	method_1832	getSubBlocks
-c	net/minecraft/class_474	br/com/craftlandia/antihack/ScreenshotHelper
+c	net/minecraft/class_474	br/com/craftlandia/antihack/ScreenshotData
 	f	Ljava/lang/String;	field_1964	uploadKey
 	m	(Ljava/lang/String;Ljava/io/File;Lnet/minecraft/class_1198;)V	<init>	<init>
 		p	3		callback

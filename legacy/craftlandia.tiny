@@ -27,7 +27,7 @@ c	net/minecraft/class_383	br/com/craftlandia/items/PrismarineItemBlock
 	m	(I)I	method_58	getMetadata
 c	net/minecraft/class_1720	br/com/craftlandia/antihack/callables/MacroModHashCallable
 	m	()Ljava/lang/String;	getMacroMd5	getMacroMd5
-c	net/minecraft/block/Block	net/minecraft/block/Block
+c	net/minecraft/class_703	net/minecraft/block/Block
 	f	Lnet/minecraft/block/Block;	stainedGlass	stainedGlass
 	f	Lnet/minecraft/Icon;	blockIcon	sideIcon
 	f	Lnet/minecraft/block/Block;	hardenedClay	hardenedClay
@@ -39,7 +39,7 @@ c	net/minecraft/class_1139	br/com/craftlandia/mods/directionhud/DirectionHudMod
 	f	Z	field_4876	directionHudEnabled
 c	net/minecraft/class_1717	br/com/craftlandia/antihack/callables/ProcessListCallable
 c	net/minecraft/class_1714	br/com/craftlandia/antihack/callables/RenderedScreensCallable
-c	net/minecraft/entity/Entity	net/minecraft/entity/Entity
+c	net/minecraft/class_1634	net/minecraft/entity/Entity
 	f	F	field_6986	entityHitboxHeight
 	f	F	field_7026	entityHitboxWidth
 	f	F	field_6978	entityScale

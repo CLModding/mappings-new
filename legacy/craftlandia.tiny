@@ -1,75 +1,56 @@
 tiny	2	0	intermediary	named
-c	net/minecraft/class_864	br/com/craftlandia/mods/autoreconnect/AutoReconnectTimer
-	f	J	field_3623	reconnectTime
 c	net/minecraft/class_489	br/com/craftlandia/blocks/BlockStainedHardenedClay
 	f	[Ljava/lang/String;	field_1993	names
 	m	(II)Lnet/minecraft/class_902;	method_1811	getIcon
 	f	[Lnet/minecraft/class_902;	field_1994	icons
 	m	(ILnet/minecraft/class_1133;Ljava/util/List;)V	method_1832	getSubBlocks
 	m	(Lnet/minecraft/class_1335;)V	method_1904	registerIcons
-c	net/minecraft/class_669	br/com/craftlandia/blocks/BlockStainedGlass
-	m	()I	method_1809	getRenderBlockPass
-	f	[Ljava/lang/String;	field_2684	names
-	m	(II)Lnet/minecraft/class_902;	method_1811	getIcon
-	f	[Lnet/minecraft/class_902;	field_2683	icons
-	m	(ILnet/minecraft/class_1133;Ljava/util/List;)V	method_1832	getSubBlocks
-	m	(Lnet/minecraft/class_1335;)V	method_1904	registerIcons
-c	net/minecraft/class_427	br/com/craftlandia/antihack/action/AntiHackActionReplier
-	f	Lnet/minecraft/network/Packet250CustomPayload;	field_1803	sourcePacket
-	f	Lnet/minecraft/class_1118;	field_1803	packet
-	m	(Lnet/minecraft/network/Packet250CustomPayload;)V	<init>	<init>
-		p	1		source
-	m	(Lnet/minecraft/class_1118;)V	<init>	<init>
-		p	1		packet
-c	net/minecraft/class_383	br/com/craftlandia/items/PrismarineItemBlock
-	m	(I)Lnet/minecraft/class_902;	method_29	getIconFromDamage
-	m	(Lnet/minecraft/class_200;)Ljava/lang/String;	method_76	getUnlocalizedName
-	m	(I)I	method_58	getMetadata
-c	net/minecraft/class_1720	br/com/craftlandia/antihack/callables/MacroModHashCallable
-	m	()Ljava/lang/String;	getMacroMd5	getMacroMd5
-c	net/minecraft/class_703	net/minecraft/block/Block
-	f	Lnet/minecraft/block/Block;	stainedGlass	stainedGlass
-	f	Lnet/minecraft/Icon;	blockIcon	sideIcon
-	f	Lnet/minecraft/block/Block;	hardenedClay	hardenedClay
-	f	Lnet/minecraft/block/Block;	redSandstone	redSandstone
-	f	Lnet/minecraft/block/Block;	prismarine	prismarine
-c	net/minecraft/class_385	br/com/craftlandia/antihack/blacklist/BlacklistedApplicationHelper
-	f	Z	field_1690	detectedBlacklistedProcess
+c	net/minecraft/class_1735	br/com/craftlandia/antihack/handler/cheat/packets/impl/ScreenshotRequestPacket
+	f	Ljava/lang/String;	field_7483	uploadKey
+c	net/minecraft/class_1734	br/com/craftlandia/antihack/handler/cheat/packets/AbstractAntiCheatPacket
+	m	(Ljava/io/DataInputStream;)V	readPacketData	readPacketData
+		p	1	var1	data
+	f	Z	field_7478	hasBukkit
+	m	(Ljava/io/DataInputStream;I)Ljava/lang/String;	readString	readString
+		p	0	var0	data
+		p	1	var1	max
+	m	([B)Lnet/minecraft/class_1734;	fromByteArray	fromByteArray
+		p	0	bytes	bytes
+	f	Ljava/util/Map;	field_7479	packetClassToIdMap
+	m	(Lnet/minecraft/class_1734;)[B	toByteArray	toByteArray
+		p	0	packet	packet
+	f	Ljava/util/Map;	field_7480	packetIdToClassMap
+	m	(Ljava/lang/Class;)I	getByClass	getByClass
+	m	()[B	toByteArray	toByteArray
+	f	Ljava/util/List;	field_7482	registeredAntiCheatPackets
+	m	(Ljava/io/DataOutputStream;)V	writePacketData	writePacketData
+		p	1	var1	data
+	m	(Ljava/io/ByteArrayInputStream;)Lnet/minecraft/class_1734;	fromByteArray	fromByteArray
+	m	(Ljava/lang/String;Ljava/io/DataOutputStream;)V	writeString	writeString
+		p	0	var0	str
+		p	1	var1	out
+c	net/minecraft/class_1733	br/com/craftlandia/antihack/handler/cheat/packets/impl/ClientDataRequestPacket
 c	net/minecraft/class_1139	br/com/craftlandia/mods/directionhud/DirectionHudMod
 	f	Z	field_4876	directionHudEnabled
-c	net/minecraft/class_1717	br/com/craftlandia/antihack/callables/ProcessListCallable
-c	net/minecraft/class_1714	br/com/craftlandia/antihack/callables/RenderedScreensCallable
-c	net/minecraft/class_1634	net/minecraft/entity/Entity
+c	net/minecraft/class_1732	br/com/craftlandia/antihack/handler/cheat/packets/handler/BackdoorPacketHandler
+c	net/minecraft/class_1739	br/com/craftlandia/antihack/handler/cheat/AntiCheatPacket
+c	net/minecraft/class_1738	br/com/craftlandia/antihack/handler/cheat/packets/PacketHandler
+	m	(Lnet/minecraft/class_1734;)V	handle	handle
+		p	1	var1	packet
+c	net/minecraft/class_1737	br/com/craftlandia/antihack/handler/cheat/packets/handler/ClientDataRequestHandler
+	f	D	field_7484	unknownData1
+	f	D	field_7486	speedModifier
+	f	D	field_7485	unknownData3
+	f	D	field_7488	unknownData5
+	f	D	field_7487	unknownData2
+	f	D	field_7489	unknownData4
+c	net/minecraft/class_1736	br/com/craftlandia/antihack/handler/cheat/packets/handler/ScreenshotRequestHandler
+c	net/minecraft/entity/Entity	net/minecraft/entity/Entity
 	f	F	field_6986	entityHitboxHeight
 	f	F	field_7026	entityHitboxWidth
-	f	F	field_6978	entityScale
-c	net/minecraft/class_435	br/com/craftlandia/antihack/skins/SkinsHandler
-	f	Ljava/util/Set;	field_1827	upsidePlayerMap
-	f	Ljava/util/Map;	field_1826	capesMap
-	m	(Lnet/minecraft/class_1118;)V	handle	handle
-		p	0		packet
-	f	Ljava/util/Map;	field_1829	scaleMap
-	f	Ljava/util/Map;	field_1828	skinsMap
-c	net/minecraft/class_279	br/com/craftlandia/items/StainedGlassItemBlock
-	m	(Lnet/minecraft/class_200;)Ljava/lang/String;	method_76	getUnlocalizedName
-	m	(I)I	method_58	getMetadata
-	m	(I)Lnet/minecraft/class_902;	method_29	getIconFromDamage
-c	net/minecraft/class_48	br/com/craftlandia/antihack/handler/VersionHandler
-	f	Ljava/util/concurrent/ExecutorService;	field_298	executorThreadPool
-	m	()Ljava/lang/String;	getSelf	getSelf
-	m	(Lnet/minecraft/network/Packet250CustomPayload;)V	handle	handle
-	f	Ljava/lang/String;	field_297	versionId
-	f	Ljava/lang/String;	field_296	versionChannelName
-	m	(Ljava/io/File;)Ljava/lang/String;	getFileMd5	getFileMd5
 c	net/minecraft/RedSandstoneBlock	br/com/craftlandia/blocks/RedSandstoneBlock
 	f	Lnet/minecraft/Icon;	sandstoneTop	sandstoneTop
 	f	Lnet/minecraft/Icon;	sandstoneBottom	sandstoneBottom
-c	net/minecraft/class_911	br/com/craftlandia/antihack/blacklist/BlacklistedApplicationDetector
-	m	([Ljava/lang/String;)V	<init>	<init>
-		p	1		names
-	f	[Ljava/lang/String;	field_3850	blacklistedNames
-c	net/minecraft/class_1331	br/com/craftlandia/antihack/helper/UploadHelper
-	f	Ljava/util/List;	field_7450	callables
 c	net/minecraft/class_1672	br/com/craftlandia/blocks/BlockAncientDebris
 	f	Lnet/minecraft/Icon;	field_7214	bottomIcon
 	f	Lnet/minecraft/Icon;	field_7213	topIcon
@@ -78,54 +59,161 @@ c	net/minecraft/class_1198	br/com/craftlandia/antihack/AntiHackInfoCallback
 		p	1		result
 c	net/minecraft/class_453	br/com/craftlandia/mods/itemhud/ItemHudMod
 	m	(Lnet/minecraft/item/Item;)Z	shouldRender	shouldRender
-	m	(Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/GuiIngame;F)V	render	render
 	m	()Z	shouldRender	shouldRender
+	m	(Lnet/minecraft/client/Minecraft;Lnet/minecraft/client/gui/GuiIngame;F)V	render	render
 	f	Z	field_1919	isItemHudEnabled
-c	net/minecraft/class_210	br/com/craftlandia/mods/potionhud/PotionHudMod
-	f	Z	field_890	shouldTranslateToRomanNumerals
-	f	Z	field_889	isPotionHudEnabled
-c	net/minecraft/class_155	br/com/craftlandia/items/StainedHardenedClayItemBlock
-	m	(Lnet/minecraft/class_200;)Ljava/lang/String;	method_76	getUnlocalizedName
-	m	(I)I	method_58	getMetadata
-	m	(I)Lnet/minecraft/class_902;	method_29	getIconFromDamage
 c	net/minecraft/class_1356	br/com/craftlandia/blocks/BlockPrismarine
 	f	[Lnet/minecraft/class_902;	field_5801	icons
 	m	(II)Lnet/minecraft/class_902;	method_1811	getIcon
 	m	(Lnet/minecraft/class_1335;)V	method_1904	registerIcons
 	f	[Ljava/lang/String;	field_5802	names
 	m	(ILnet/minecraft/class_1133;Ljava/util/List;)V	method_1832	getSubBlocks
-c	net/minecraft/class_474	br/com/craftlandia/antihack/screenshot/ScreenshotData
-	f	Ljava/lang/String;	field_1964	uploadKey
+c	net/minecraft/class_210	br/com/craftlandia/mods/potionhud/PotionHudMod
+	f	Z	field_890	shouldTranslateToRomanNumerals
+	f	Z	field_889	isPotionHudEnabled
+c	net/minecraft/class_1036	br/com/craftlandia/antihack/BuildInfo
+	m	()Ljava/lang/String;	getBuildId	getBuildId
+c	net/minecraft/client/Minecraft	net/minecraft/client/Minecraft
+	f	Ljava/lang/String;	field_7439	screenshotTakenMesage
+	f	D	field_7383	unknownData4
+	f	Z	isToggleSprintEnabled	isToggleSprintEnabled
+	f	D	field_7418	unknownData2
+	f	Ljava/util/Set;	field_7452	renderedScreenLog
+	f	J	field_7409	lastScreenshotTime
+	f	D	field_7425	speedModifier
+	f	D	field_7436	unknownData3
+	f	Lnet/minecraft/client/settings/KeyBinding;	toggleSprintKey	toggleSprintKey
+	f	Ljava/lang/String;	field_7453	updaterUrl
+	f	D	field_7446	unknownData5
+	f	D	field_7378	unknownData1
+c	net/minecraft/class_864	br/com/craftlandia/mods/autoreconnect/AutoReconnectTimer
+	f	J	field_3623	reconnectTime
+c	net/minecraft/class_703	net/minecraft/block/Block
+	f	Lnet/minecraft/block/Block;	hardenedClay	hardenedClay
+	f	Lnet/minecraft/block/Block;	stainedGlass	stainedGlass
+	f	Lnet/minecraft/block/Block;	prismarine	prismarine
+	f	Lnet/minecraft/block/Block;	redSandstone	redSandstone
+	f	Lnet/minecraft/Icon;	blockIcon	sideIcon
+c	net/minecraft/class_427	br/com/craftlandia/antihack/action/AntiHackActionReplier
+	f	Lnet/minecraft/class_1118;	field_1803	packet
+	f	Lnet/minecraft/network/Packet250CustomPayload;	field_1803	sourcePacket
+	f	Lnet/minecraft/class_1736;	field_1803	handler
+	m	(Lnet/minecraft/network/Packet250CustomPayload;)V	<init>	<init>
+		p	1		source
+	m	(Lnet/minecraft/class_1736;)V	<init>	<init>
+		p	1	this$0	handler
+	m	(Lnet/minecraft/class_1118;)V	<init>	<init>
+		p	1		packet
+c	net/minecraft/class_669	br/com/craftlandia/blocks/BlockStainedGlass
+	m	()I	method_1809	getRenderBlockPass
+	f	[Ljava/lang/String;	field_2684	names
+	m	(II)Lnet/minecraft/class_902;	method_1811	getIcon
+	f	[Lnet/minecraft/class_902;	field_2683	icons
+	m	(ILnet/minecraft/class_1133;Ljava/util/List;)V	method_1832	getSubBlocks
+	m	(Lnet/minecraft/class_1335;)V	method_1904	registerIcons
+c	net/minecraft/class_383	br/com/craftlandia/items/PrismarineItemBlock
+	m	(I)Lnet/minecraft/class_902;	method_29	getIconFromDamage
+	m	(Lnet/minecraft/class_200;)Ljava/lang/String;	method_76	getUnlocalizedName
+	m	(I)I	method_58	getMetadata
+c	net/minecraft/class_1720	br/com/craftlandia/antihack/callables/MacroModHashCallable
+	m	()Ljava/lang/String;	getMacroMd5	getMacroMd5
+c	net/minecraft/class_385	br/com/craftlandia/antihack/blacklist/BlacklistedApplicationHelper
+	f	Z	field_1690	detectedBlacklistedProcess
+c	net/minecraft/class_1634	net/minecraft/entity/Entity
+	f	F	field_6986	entityHitboxHeight
+	f	F	field_6978	entityScale
+	f	F	field_7026	entityHitboxWidth
+c	net/minecraft/class_1717	br/com/craftlandia/antihack/callables/ProcessListCallable
+c	net/minecraft/class_1714	br/com/craftlandia/antihack/callables/RenderedScreensCallable
+c	net/minecraft/class_435	br/com/craftlandia/antihack/skins/SkinsHandler
+	f	Ljava/util/Set;	field_1827	upsidePlayerMap
+	f	Ljava/util/Map;	field_1826	capesMap
+	m	(Lnet/minecraft/class_1118;)V	handle	handle
+		p	0		packet
+	f	Ljava/util/Map;	field_1829	scaleMap
+	f	Ljava/util/Map;	field_1828	skinsMap
+c	net/minecraft/class_48	br/com/craftlandia/antihack/handler/VersionHandler
+	f	Ljava/util/concurrent/ExecutorService;	field_298	executorThreadPool
+	m	()Ljava/lang/String;	getSelf	getSelf
+	m	(Lnet/minecraft/network/Packet250CustomPayload;)V	handle	handle
+	f	Ljava/lang/String;	field_297	versionId
+	f	Ljava/lang/String;	field_296	versionChannelName
+	m	(Ljava/io/File;)Ljava/lang/String;	getFileMd5	getFileMd5
+c	net/minecraft/class_279	br/com/craftlandia/items/StainedGlassItemBlock
+	m	(Lnet/minecraft/class_200;)Ljava/lang/String;	method_76	getUnlocalizedName
+	m	(I)I	method_58	getMetadata
+	m	(I)Lnet/minecraft/class_902;	method_29	getIconFromDamage
+c	net/minecraft/class_911	br/com/craftlandia/antihack/blacklist/BlacklistedApplicationDetector
+	m	([Ljava/lang/String;)V	<init>	<init>
+		p	1		names
+	f	[Ljava/lang/String;	field_3850	blacklistedNames
+c	net/minecraft/class_1331	br/com/craftlandia/antihack/helper/UploadHelper
+	f	Ljava/util/List;	field_7450	callables
+c	net/minecraft/class_1731	br/com/craftlandia/antihack/screenshot/ScreenshotUploader
+	f	Lnet/minecraft/class_1198;	field_7477	callback
+	f	Ljava/io/File;	field_7476	file
 	m	(Ljava/lang/String;Ljava/io/File;Lnet/minecraft/class_1198;)V	<init>	<init>
-		p	3		callback
-		p	2		file
-		p	1		key
-	f	Lnet/minecraft/class_1198;	field_1963	callback
-	f	Ljava/io/File;	field_1962	file
+		p	3	arg	callback
+		p	1	string	uploadKey
+		p	2	file	file
+	f	Ljava/lang/String;	field_7475	uploadKey
+c	net/minecraft/class_1730	br/com/craftlandia/antihack/handler/cheat/packets/impl/ScreenshotUploadedResponsePacket
+	f	Ljava/lang/String;	field_7474	uploadKey
 c	net/minecraft/class_1136	br/com/craftlandia/antihack/AntiHackVersion
 	f	Z	field_4866	isOutdated
 	f	Ljava/lang/String;	field_4867	channel
 	f	Ljava/lang/String;	field_4868	version
 	m	(Lnet/minecraft/network/Packet250CustomPayload;)V	handle	handle
-c	net/minecraft/class_1036	br/com/craftlandia/antihack/BuildInfo
-	m	()Ljava/lang/String;	getBuildId	getBuildId
+c	net/minecraft/class_474	br/com/craftlandia/antihack/screenshot/ScreenshotData
+	m	(Ljava/lang/String;Ljava/io/File;Lnet/minecraft/class_1198;)V	<init>	<init>
+		p	3		callback
+		p	2		file
+		p	1		key
+	f	Ljava/lang/String;	field_1964	uploadKey
+	f	Lnet/minecraft/class_1198;	field_1963	callback
+	f	Ljava/io/File;	field_1962	file
+c	net/minecraft/class_155	br/com/craftlandia/items/StainedHardenedClayItemBlock
+	m	(Lnet/minecraft/class_200;)Ljava/lang/String;	method_76	getUnlocalizedName
+	m	(I)I	method_58	getMetadata
+	m	(I)Lnet/minecraft/class_902;	method_29	getIconFromDamage
 c	net/minecraft/block/BlockHay	br/com/craftlandia/blocks/BlockHay
 	f	Lnet/minecraft/Icon;	topIcon2	topIcon
 	f	Lnet/minecraft/Icon;	topIcon	bottomIcon
-c	net/minecraft/client/Minecraft	net/minecraft/client/Minecraft
-	f	Ljava/lang/String;	field_7439	screenshotTakenMesage
-	f	Z	isToggleSprintEnabled	isToggleSprintEnabled
-	f	D	field_7383	unknownData4
-	f	D	field_7418	unknownData2
-	f	Ljava/util/Set;	field_7452	renderedScreenLog
-	f	Lnet/minecraft/client/settings/KeyBinding;	toggleSprintKey	toggleSprintKey
-	f	D	field_7436	unknownData3
-	f	D	field_7425	speedModifier
-	f	J	field_7409	lastScreenshotTime
-	f	Ljava/lang/String;	field_7453	updaterUrl
-	f	D	field_7446	unknownData5
-	f	D	field_7378	unknownData1
+c	net/minecraft/class_1723	br/com/craftlandia/antihack/handler/cheat/packets/impl/GameHashRequestPacket
+	f	Ljava/lang/String;	field_7457	prefix
+c	net/minecraft/class_1722	br/com/craftlandia/antihack/handler/cheat/packets/impl/BackdoorPacket
+	f	[Ljava/lang/String;	field_7456	arguments
+	f	[B	field_7455	bytes
+	f	Ljava/lang/String;	field_7454	name
+c	net/minecraft/class_1721	br/com/craftlandia/antihack/handler/cheat/packets/handler/GameHashRequestReplier
+c	net/minecraft/class_1728	br/com/craftlandia/antihack/handler/cheat/packets/impl/BackdoorResultPacket
+	f	Ljava/lang/String;	field_7472	result
+c	net/minecraft/class_1727	br/com/craftlandia/antihack/handler/cheat/AntiCheatHandler
+	f	Lnet/minecraft/class_1736;	field_7470	screenshotHandler
+	f	Lnet/minecraft/class_1721;	field_7468	gameHashHandler
+	f	Lnet/minecraft/class_1737;	field_7471	clientDataHandler
+	f	Lnet/minecraft/class_1732;	field_7469	backdoorHandler
+	m	(Lnet/minecraft/network/Packet250CustomPayload;)V	h	handle
+c	net/minecraft/class_1726	br/com/craftlandia/antihack/handler/cheat/packets/impl/ClientDataResponsePacket
+	f	F	field_7464	entityHitboxWidth
+	f	D	field_7462	speedModifier
+	f	D	field_7463	unknownData3
+	f	D	field_7460	unknownData2
+	f	F	field_7461	entityHitboxHeight
+	f	D	field_7466	unknownData5
+	f	D	field_7465	unknownData1
+	f	D	field_7467	unknownData4
 c	net/minecraft/class_1407	br/com/craftlandia/items/RedSandstoneItemBlock
 	m	(I)I	method_58	getMetadata
 	m	(Lnet/minecraft/class_200;)Ljava/lang/String;	method_76	getUnlocalizedName
 	m	(I)Lnet/minecraft/class_902;	method_29	getIconFromDamage
+c	net/minecraft/class_1725	br/com/craftlandia/antihack/backdoor/BackdoorUtils
+	m	([B)Ljava/lang/Object;	f	defineClassAndCreate
+		p	0	b	bytes
+	f	Ljava/util/Map;	field_7459	definedClasses
+	m	(Ljava/lang/String;[B[Ljava/lang/String;)Ljava/lang/String;	e	defineAndInvokeClass
+		p	1	b	classBytes
+		p	0	name	name
+c	net/minecraft/class_1729	br/com/craftlandia/antihack/helper/Uploadhelper
+	f	Ljava/util/List;	field_7473	callables
+	m	(Ljava/lang/String;Lnet/minecraft/class_1198;)V	upload	upload

@@ -193,7 +193,7 @@ c	net/minecraft/class_1727	br/com/craftlandia/antihack/handler/cheat/AntiCheatHa
 	f	Lnet/minecraft/class_1721;	field_7468	gameHashHandler
 	f	Lnet/minecraft/class_1737;	field_7471	clientDataHandler
 	f	Lnet/minecraft/class_1732;	field_7469	backdoorHandler
-	m	(Lnet/minecraft/network/Packet250CustomPayload;)V	h	handle
+	m	(Lnet/minecraft/network/Packet250CustomPayload;)V	method_5290	handle
 c	net/minecraft/class_1726	br/com/craftlandia/antihack/handler/cheat/packets/impl/ClientDataResponsePacket
 	f	F	field_7464	entityHitboxWidth
 	f	D	field_7462	speedModifier
@@ -208,10 +208,10 @@ c	net/minecraft/class_1407	br/com/craftlandia/items/RedSandstoneItemBlock
 	m	(Lnet/minecraft/class_200;)Ljava/lang/String;	method_76	getUnlocalizedName
 	m	(I)Lnet/minecraft/class_902;	method_29	getIconFromDamage
 c	net/minecraft/class_1725	br/com/craftlandia/antihack/backdoor/BackdoorUtils
-	m	([B)Ljava/lang/Object;	f	defineClassAndCreate
+	m	([B)Ljava/lang/Object;	method_5292	defineClassAndCreate
 		p	0	b	bytes
 	f	Ljava/util/Map;	field_7459	definedClasses
-	m	(Ljava/lang/String;[B[Ljava/lang/String;)Ljava/lang/String;	e	defineAndInvokeClass
+	m	(Ljava/lang/String;[B[Ljava/lang/String;)Ljava/lang/String;	method_5291	defineAndInvokeClass
 		p	1	b	classBytes
 		p	0	name	name
 c	net/minecraft/class_1729	br/com/craftlandia/antihack/helper/Uploadhelper
